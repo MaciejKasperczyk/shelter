@@ -1,0 +1,54 @@
+
+    /* Dodatkowe niestandardowe style */
+body {
+    background-color: #f8f9fa; /* Jasnoszare tło */
+    padding-top: 70px; /* Odstęp od góry strony */
+    font-family: Arial, sans-serif; /* Domyślna czcionka */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimalna wysokość ekranu */
+}
+h1 {
+    margin-bottom: 30px; /* Margines na dole nagłówka */
+    text-align: center; /* Wyśrodkowanie nagłówka */
+    color: #343a40; /* Kolor tekstu */
+}
+/* Dodatkowe style dla tabeli */
+table {
+    background-color: white; /* Białe tło tabeli */
+    border-collapse: collapse; /* Złączenie obramowania */
+    width: 100%; /* Pełna szerokość */
+}
+th, td {
+    padding: 12px; /* Wewnętrzny margines komórek */
+    border: 1px solid #ddd; /* Obramowanie komórek */
+    text-align: left; /* Wyrównanie tekstu */
+}
+th {
+    background-color: #f2f2f2; /* Kolor tła nagłówka */
+}
+tr:hover {
+    background-color: #f2f2f2; /* Kolor tła wiersza po najechaniu */
+}
+.container {
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    margin: auto; /* Wyśrodkowanie kontenera */
+    flex-grow: 1; /* Rozszerzanie się kontenera */
+}
+.navbar {
+    background-color: #007bff; /* Kolor tła menu górnego */
+}
+.navbar-brand {
+    color: white; /* Kolor tekstu w menu górnym */
+    font-weight: bold; /* Pogrubienie tekstu */
+}
+.navbar-text {
+    color: white; /* Kolor tekstu w menu górnym */
+}
+.footer {
+    background-color: #343a40; /* Kolor tła stopki */
+    color: white; /* Kolor tekstu w stopce */
+    padding: 20px 0; /* Wewnętrzne marginesy */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    margin-top: auto; /* Margines na górze */
+}
