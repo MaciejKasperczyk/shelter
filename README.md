@@ -1,4 +1,4 @@
-![GitHub Actions](https://github.com/MaciejKasperczyk/shelter/actions/workflows/github-actions.yml/badge.svg)
+![Running tests](https://github.com/MaciejKasperczyk/shelter/actions/workflows/github-actions.yml/badge.svg)
 
 # Getting Started
 
