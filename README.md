@@ -1,3 +1,5 @@
+![github-actions](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 # Getting Started
 
 ### Installation
