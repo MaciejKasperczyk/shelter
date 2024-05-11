@@ -1,54 +1,41 @@
+/* Style dla Schroniska dla psów */
 
-    /* Dodatkowe niestandardowe style */
 body {
-    background-color: #f8f9fa; /* Jasnoszare tło */
-    padding-top: 70px; /* Odstęp od góry strony */
-    font-family: Arial, sans-serif; /* Domyślna czcionka */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Minimalna wysokość ekranu */
+    font-family: 'Arial', sans-serif;
+    margin-top: 70px; /* Daje przestrzeń dla paska nawigacyjnego */
+    background-color: #f4f4f4; /* Jasnoszare tło dla strony */
 }
-h1 {
-    margin-bottom: 30px; /* Margines na dole nagłówka */
-    text-align: center; /* Wyśrodkowanie nagłówka */
-    color: #343a40; /* Kolor tekstu */
-}
-/* Dodatkowe style dla tabeli */
-table {
-    background-color: white; /* Białe tło tabeli */
-    border-collapse: collapse; /* Złączenie obramowania */
-    width: 100%; /* Pełna szerokość */
-}
-th, td {
-    padding: 12px; /* Wewnętrzny margines komórek */
-    border: 1px solid #ddd; /* Obramowanie komórek */
-    text-align: left; /* Wyrównanie tekstu */
-}
-th {
-    background-color: #f2f2f2; /* Kolor tła nagłówka */
-}
-tr:hover {
-    background-color: #f2f2f2; /* Kolor tła wiersza po najechaniu */
-}
-.container {
-    max-width: 800px; /* Maksymalna szerokość kontenera */
-    margin: auto; /* Wyśrodkowanie kontenera */
-    flex-grow: 1; /* Rozszerzanie się kontenera */
-}
+
 .navbar {
-    background-color: #007bff; /* Kolor tła menu górnego */
+    background-color: #555; /* Ciemnoszary kolor dla paska nawigacyjnego */
 }
-.navbar-brand {
-    color: white; /* Kolor tekstu w menu górnym */
-    font-weight: bold; /* Pogrubienie tekstu */
+
+.navbar-brand, .navbar-text {
+    color: #fff; /* Biały tekst dla elementów nawigacyjnych */
 }
-.navbar-text {
-    color: white; /* Kolor tekstu w menu górnym */
+
+.table {
+    background-color: #fff; /* Białe tło dla tabeli */
 }
+
+.table th {
+    background-color: #777; /* Ciemnoszary kolor dla nagłówków tabeli */
+    color: #fff; /* Biały tekst dla nagłówków tabeli */
+}
+
 .footer {
-    background-color: #343a40; /* Kolor tła stopki */
-    color: white; /* Kolor tekstu w stopce */
-    padding: 20px 0; /* Wewnętrzne marginesy */
-    text-align: center; /* Wyśrodkowanie tekstu */
-    margin-top: auto; /* Margines na górze */
+    background-color: #555; /* Ciemnoszary kolor stopki */
+    color: #fff; /* Biały tekst w stopce */
+    text-align: center; /* Wyśrodkowanie tekstu w stopce */
+    padding: 10px 0; /* Padding dla stopki */
+    position: fixed; /* Ustawienie stopki na stałe na dole */
+    bottom: 0;
+    width: 100%;
 }
+
+.btn-primary {
+    background-color: #006; /* Ciemnoniebieski kolor dla przycisków */
+    border-color: #005cbf; /* Granatowy kolor obramowania przycisku */
+}
+
+/* Dodatkowe style mogą być tutaj, w zależności od potrzeb */

@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import java.time.LocalDate;
+import java.util.concurrent.ThreadLocalRandom;
 
 @RestController
 public class DogController {
@@ -44,5 +46,17 @@ public class DogController {
         String apiUrl = "https://dog.ceo/api/breeds/image/random";
         ResponseEntity<String> response = restTemplate.getForEntity(apiUrl, String.class);
         return ResponseEntity.status(response.getStatusCode()).body(response.getBody());
+    }
+    @GetMapping("/dogs/{id}/last-visit")
+    public String getLastVetVisit(@PathVariable String id) {
+        LocalDate randomDate = getRandomDate();
+        return "" +randomDate;
+    }
+
+    private LocalDate getRandomDate() {
+        long minDay = LocalDate.now().minusDays(365).toEpochDay();
+        long maxDay = LocalDate.now().toEpochDay();
+        long randomDay = ThreadLocalRandom.current().nextLong(minDay, maxDay);
+        return LocalDate.ofEpochDay(randomDay);
     }
 }
