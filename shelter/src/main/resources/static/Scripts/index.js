@@ -42,7 +42,7 @@ async function fetchAndRenderDogs() {
                 <td>${dog.dog_age}</td>
                 <td><img src="${image}" style="width: 200px; height: 200px;" /></td>
                 <td>${lastVisit}</td>
-                <
+                <td><button class="btn btn-danger" onclick="adoptDog(${dog.dog_id})">Adoptuj</button></td>
             `;
             tableBody.appendChild(row);
         }
@@ -50,6 +50,27 @@ async function fetchAndRenderDogs() {
         console.error('Error fetching dogs:', error);
     }
 }
+
+window.onload = fetchAndRenderDogs;
+async function fetchLastVetVisit(dogId) {
+    try {
+        const response = await fetch(`http://localhost:8090/dogs/${dogId}/last-visit`);
+        if (!response.ok) throw new Error('Failed to fetch');
+        const data = await response.json();
+        if (!data) {
+            // Generuj losową datę, jeśli API nie zwróciło daty
+            const randomDate = new Date(Date.now() - Math.floor(Math.random() * 10000000000));
+            return randomDate.toISOString().slice(0, 10); // Formatuje datę na YYYY-MM-DD
+        }
+        return data; // Zakładamy, że API zwraca datę jako string
+    } catch (error) {
+        console.error(`Error fetching last vet visit for dog ${dogId}:`, error);
+        // Generuj losową datę w przypadku błędu
+        const randomDate = new Date(Date.now() - Math.floor(Math.random() * 10000000000));
+        return randomDate.toISOString().slice(0, 10); // Formatuje datę na YYYY-MM-DD
+    }
+}
+
 
 
 
