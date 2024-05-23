@@ -1,54 +1,58 @@
-
-    /* Dodatkowe niestandardowe style */
 body {
-    background-color: #f8f9fa; /* Jasnoszare tło */
-    padding-top: 70px; /* Odstęp od góry strony */
-    font-family: Arial, sans-serif; /* Domyślna czcionka */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Minimalna wysokość ekranu */
+    font-family: 'Arial', sans-serif;
+    margin-top: 70px;
+    background-color: #2c2c2e; /* Ciemne, ale nie czarne tło */
+    color: #f5f5f7; /* Bardzo jasny szary tekst */
 }
-h1 {
-    margin-bottom: 30px; /* Margines na dole nagłówka */
-    text-align: center; /* Wyśrodkowanie nagłówka */
-    color: #343a40; /* Kolor tekstu */
-}
-/* Dodatkowe style dla tabeli */
-table {
-    background-color: white; /* Białe tło tabeli */
-    border-collapse: collapse; /* Złączenie obramowania */
-    width: 100%; /* Pełna szerokość */
-}
-th, td {
-    padding: 12px; /* Wewnętrzny margines komórek */
-    border: 1px solid #ddd; /* Obramowanie komórek */
-    text-align: left; /* Wyrównanie tekstu */
-}
-th {
-    background-color: #f2f2f2; /* Kolor tła nagłówka */
-}
-tr:hover {
-    background-color: #f2f2f2; /* Kolor tła wiersza po najechaniu */
-}
-.container {
-    max-width: 800px; /* Maksymalna szerokość kontenera */
-    margin: auto; /* Wyśrodkowanie kontenera */
-    flex-grow: 1; /* Rozszerzanie się kontenera */
-}
+
 .navbar {
-    background-color: #007bff; /* Kolor tła menu górnego */
+    background: linear-gradient(145deg, #424245, #303030); /* Subtelny gradient dla paska nawigacyjnego */
+    border-bottom: 3px solid #42a5f5; /* Niebieski akcent koloru */
 }
-.navbar-brand {
-    color: white; /* Kolor tekstu w menu górnym */
-    font-weight: bold; /* Pogrubienie tekstu */
+
+.navbar-brand, .navbar-text {
+    color: #ffffff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Cień tekstu dla lepszej czytelności */
 }
-.navbar-text {
-    color: white; /* Kolor tekstu w menu górnym */
+
+.table {
+    background-color: #424245; /* Ciemnoszary kolor tabeli */
+    border: 1px solid #525255; /* Delikatne obramowanie */
 }
+
+.table th {
+    background-color: #303030; /* Bardziej intensywny ciemny kolor dla nagłówków */
+    color: #42a5f5; /* Jasny niebieski tekst */
+}
+
+.table td {
+    border-bottom: 1px solid #525255; /* Delikatne linie między wierszami */
+    color: #e3f2fd; /* Jasny tekst */
+}
+
 .footer {
-    background-color: #343a40; /* Kolor tła stopki */
-    color: white; /* Kolor tekstu w stopce */
-    padding: 20px 0; /* Wewnętrzne marginesy */
-    text-align: center; /* Wyśrodkowanie tekstu */
-    margin-top: auto; /* Margines na górze */
+    background: #303030;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #42a5f5; /* Jasny niebieski */
+    border-color: #1e88e5; /* Nieco ciemniejszy niebieski */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1e88e5;
+    border-color: #1565c0;
+    transform: scale(1.1); /* Lekkie powiększenie przy najechaniu */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #64b5f6; /* Jasniejszy niebieski dla linków */
 }
