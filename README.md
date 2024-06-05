@@ -27,7 +27,16 @@ INSERT INTO dogs (dog_age, dog_id, dog_name, dog_race, dog_sex) VALUES
 (4, 4, 'Lucy', 'Beagle', 'Female'),
 (1, 5, 'Charlie', 'Bulldog', 'Male');
 
+### Locust
+To install Locust open Locust file directory and run:
+pip install locust
+
 
 ### Usage
 
 In browser: http://localhost:8090/index.html or http://127.0.0.1:8090/index.html 
+
+In terminal run:
+locust
+
+and open http://localhost:8089
